@@ -1,0 +1,15 @@
+// === File 1: manifest.json ===
+{
+  "manifest_version": 3,
+  "name": "Khan Academy Login Redirector",
+  "version": "1.0",
+  "description": "Redirects Khan Academy login and teacher pages to homepage.",
+  "permissions": ["tabs", "webNavigation"],
+  "host_permissions": ["https://www.khanacademy.org/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Khan Redirect Active"
+  }
+}
